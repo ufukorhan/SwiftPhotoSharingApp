@@ -140,7 +140,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Upload"/>
                                 <connections>
-                                    <action selector="uploadButtonTiklandi:" destination="RVr-eA-gfa" eventType="touchUpInside" id="FMh-oO-bh7"/>
+                                    <action selector="uploadButtonTiklandi:" destination="RVr-eA-gfa" eventType="touchUpInside" id="03r-iB-Nn5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -162,8 +162,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="square.and.arrow.up" catalog="system" id="Ctz-f9-2Sg"/>
                     <connections>
-                        <outlet property="imageView" destination="5TN-WO-8Ba" id="Dz8-sp-EWl"/>
-                        <outlet property="yorumTextField" destination="zPn-xj-vuv" id="268-O1-3AI"/>
+                        <outlet property="imageView" destination="5TN-WO-8Ba" id="85k-6h-oPt"/>
+                        <outlet property="yorumTextField" destination="zPn-xj-vuv" id="XJG-r9-Ugk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QtZ-Dx-6yJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
