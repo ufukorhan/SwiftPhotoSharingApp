@@ -177,14 +177,64 @@
                     <view key="view" contentMode="scaleToFill" id="pvD-U8-9Q9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fgp-nN-2xN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="342" id="sRj-do-sdd" customClass="FeedCell" customModule="PhotoSharingApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="342"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sRj-do-sdd" id="0m4-9F-r73">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="342"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8HL-cY-HKF">
+                                                    <rect key="frame" x="20" y="66" width="374" height="214"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="kullanici yorumu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEm-K6-yRi">
+                                                    <rect key="frame" x="20" y="288" width="374" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xf-7o-msu">
+                                                    <rect key="frame" x="20" y="11" width="374" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="emailText" destination="8Xf-7o-msu" id="vvS-pf-Wut"/>
+                                            <outlet property="postImageView" destination="8HL-cY-HKF" id="bqc-oP-aV1"/>
+                                            <outlet property="yorumText" destination="wEm-K6-yRi" id="tNd-l5-6rx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="nQZ-OA-uYi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nQZ-OA-uYi" firstAttribute="bottom" secondItem="fgp-nN-2xN" secondAttribute="bottom" id="U83-lo-NA3"/>
+                            <constraint firstItem="fgp-nN-2xN" firstAttribute="top" secondItem="nQZ-OA-uYi" secondAttribute="top" id="gYH-Xp-K5d"/>
+                            <constraint firstItem="fgp-nN-2xN" firstAttribute="leading" secondItem="nQZ-OA-uYi" secondAttribute="leading" id="vqy-ip-vcu"/>
+                            <constraint firstItem="nQZ-OA-uYi" firstAttribute="trailing" secondItem="fgp-nN-2xN" secondAttribute="trailing" id="x6M-Im-yb8"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="mosaic.fill" catalog="system" id="Uf4-Wp-rLT"/>
+                    <connections>
+                        <outlet property="tableView" destination="fgp-nN-2xN" id="rLa-hN-SeT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igH-fD-MeC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1480" y="-356"/>
+            <point key="canvasLocation" x="1478.2608695652175" y="-356.25"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="G4A-yL-EB4">
