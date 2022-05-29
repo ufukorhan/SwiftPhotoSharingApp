@@ -19,6 +19,7 @@
 		EF7833F4283CFE4700A4DF49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7833F2283CFE4700A4DF49 /* LaunchScreen.storyboard */; };
 		EF7833FC283D016D00A4DF49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF7833FB283D016D00A4DF49 /* GoogleService-Info.plist */; };
 		EF82787928438CDE000DD422 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF82787828438CDE000DD422 /* FeedCell.swift */; };
+		EFD6AA782843A1F400EA3E9B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD6AA772843A1F400EA3E9B /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		EF7833F5283CFE4700A4DF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF7833FB283D016D00A4DF49 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF82787828438CDE000DD422 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		EFD6AA772843A1F400EA3E9B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				EF1D035E284118880007C327 /* UploadViewController.swift */,
 				EF1D0360284118A00007C327 /* SettingsViewController.swift */,
 				EF82787828438CDE000DD422 /* FeedCell.swift */,
+				EFD6AA772843A1F400EA3E9B /* Post.swift */,
 				EF7833ED283CFE4500A4DF49 /* Main.storyboard */,
 				EF7833F0283CFE4700A4DF49 /* Assets.xcassets */,
 				EF7833F2283CFE4700A4DF49 /* LaunchScreen.storyboard */,
@@ -225,6 +228,7 @@
 				EF82787928438CDE000DD422 /* FeedCell.swift in Sources */,
 				EF7833EC283CFE4500A4DF49 /* ViewController.swift in Sources */,
 				EF1D035F284118880007C327 /* UploadViewController.swift in Sources */,
+				EFD6AA782843A1F400EA3E9B /* Post.swift in Sources */,
 				EF7833E8283CFE4500A4DF49 /* AppDelegate.swift in Sources */,
 				EF1D035D284118670007C327 /* FeedViewController.swift in Sources */,
 				EF7833EA283CFE4500A4DF49 /* SceneDelegate.swift in Sources */,
